@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "MY_FIRST_PROJECT"
+version = "0.1.0"
+description = ""
+authors = ["Ilya Uvarov <drarov@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+colorama = "^0.4.5"
+
+[tool.poetry.scripts]
+say-hello = "my_first_project.scripts.say_hello:main"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipython = "7.16.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
